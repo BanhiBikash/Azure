@@ -1,10 +1,44 @@
 {
   "version": 2,
-  "dgSpecHash": "JLFORPxmwH0=",
+  "dgSpecHash": "eBOgpAx8otQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Banhi\\source\\repos\\Azure\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512"
+    "C:\\Users\\Banhi\\.nuget\\packages\\azure.core\\1.53.0\\azure.core.1.53.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\azure.identity\\1.21.0\\azure.identity.1.21.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\azure.monitor.opentelemetry.exporter\\1.7.0\\azure.monitor.opentelemetry.exporter.1.7.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.applicationinsights\\3.1.0\\microsoft.applicationinsights.3.1.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.applicationinsights.aspnetcore\\3.1.0\\microsoft.applicationinsights.aspnetcore.3.1.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\10.0.3\\microsoft.bcl.asyncinterfaces.10.0.3.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.identity.client\\4.83.1\\microsoft.identity.client.4.83.1.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.83.1\\microsoft.identity.client.extensions.msal.4.83.1.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry\\1.15.1\\opentelemetry.1.15.1.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.api\\1.15.1\\opentelemetry.api.1.15.1.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.15.1\\opentelemetry.api.providerbuilderextensions.1.15.1.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.15.1\\opentelemetry.extensions.hosting.1.15.1.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.15.0\\opentelemetry.instrumentation.aspnetcore.1.15.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.15.0\\opentelemetry.instrumentation.http.1.15.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.instrumentation.sqlclient\\1.15.0\\opentelemetry.instrumentation.sqlclient.1.15.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.persistentstorage.abstractions\\1.0.2\\opentelemetry.persistentstorage.abstractions.1.0.2.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\opentelemetry.persistentstorage.filesystem\\1.0.2\\opentelemetry.persistentstorage.filesystem.1.0.2.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\system.clientmodel\\1.10.0\\system.clientmodel.1.10.0.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\system.memory.data\\10.0.3\\system.memory.data.10.0.3.nupkg.sha512",
+    "C:\\Users\\Banhi\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'OpenTelemetry.Api' 1.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j",
+      "projectPath": "C:\\Users\\Banhi\\source\\repos\\Azure\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Banhi\\source\\repos\\Azure\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "libraryId": "OpenTelemetry.Api",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
