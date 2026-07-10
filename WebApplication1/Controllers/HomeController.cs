@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
         [HttpGet("/")]
         public IActionResult Index()
         {
-            ViewBag.MyKey = _configuration["MyKey"];
+            //ViewBag.MyKey = _configuration["MyKey"];
             //throw new InvalidOperationException();
             return View();
         }
