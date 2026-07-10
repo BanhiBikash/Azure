@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
         [HttpGet("/")]
         public IActionResult Index()
         {
-            throw new InvalidOperationException();
+            //throw new InvalidOperationException();
             return View();
         }
     }
