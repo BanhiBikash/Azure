@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model Person
+<!DOCTYPE html>
     <html>
     <head>
         <title>This is home</title>
@@ -6,5 +7,26 @@
     <body>
     <h1>Welcome to home page</h1>
     <h2>@ViewBag.MyKey</h2>
+
+    <form asp-action="Add" asp-controller="Home" method="post">
+
+        <div>
+            <label>Name</label><br />
+            <input asp-for="name" />
+        </div>
+
+        <br />
+
+        <div>
+            <label>Email</label><br />
+            <input asp-for="email" />
+        </div>
+
+        <br />
+
+        <button type="submit">Save</button>
+
+    </form>
+
     </body>
     </html>
