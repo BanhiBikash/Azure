@@ -24,7 +24,6 @@
         }
       },
       "required": [
-        "CredentialSource",
         "CredentialSource"
       ],
       "allOf": [
@@ -1349,5 +1348,5 @@
     }
   },
   "type": "object",
-  "SourceSegments": "C:\\Users\\Banhi\\.nuget\\packages\\system.clientmodel\\1.10.0\\ConfigurationSchema.json;C:\\Users\\Banhi\\.nuget\\packages\\azure.core\\1.53.0\\ConfigurationSchema.json"
+  "SourceSegments": "C:\\Users\\Banhi\\.nuget\\packages\\system.clientmodel\\1.11.0\\ConfigurationSchema.json;C:\\Users\\Banhi\\.nuget\\packages\\azure.core\\1.55.0\\ConfigurationSchema.json"
 }

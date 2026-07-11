@@ -2,13 +2,13 @@
   "version": 4,
   "targets": {
     "net10.0": {
-      "Azure.Core/1.53.0": {
+      "Azure.Core/1.55.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "10.0.3",
           "Microsoft.Identity.Client": "4.83.1",
           "Microsoft.Identity.Client.Extensions.Msal": "4.83.1",
-          "System.ClientModel": "1.10.0",
+          "System.ClientModel": "1.11.0",
           "System.Memory.Data": "10.0.3"
         },
         "compile": {
@@ -23,6 +23,22 @@
         },
         "build": {
           "buildTransitive/net10.0/Azure.Core.targets": {}
+        }
+      },
+      "Azure.Data.Tables/12.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.44.1"
+        },
+        "compile": {
+          "lib/net8.0/Azure.Data.Tables.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Azure.Data.Tables.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Azure.Identity/1.21.0": {
@@ -55,6 +71,57 @@
         },
         "runtime": {
           "lib/net10.0/Azure.Monitor.OpenTelemetry.Exporter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.29.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.55.0",
+          "Azure.Storage.Common": "12.28.0"
+        },
+        "compile": {
+          "lib/net10.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.28.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.55.0",
+          "System.IO.Hashing": "10.0.3"
+        },
+        "compile": {
+          "lib/net10.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Queues/12.27.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.55.0",
+          "Azure.Storage.Common": "12.28.0"
+        },
+        "compile": {
+          "lib/net10.0/Azure.Storage.Queues.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Azure.Storage.Queues.dll": {
             "related": ".xml"
           }
         }
@@ -1021,7 +1088,7 @@
           }
         }
       },
-      "System.ClientModel/1.10.0": {
+      "System.ClientModel/1.11.0": {
         "type": "package",
         "dependencies": {
           "System.Memory.Data": "10.0.3"
@@ -1202,6 +1269,22 @@
           }
         }
       },
+      "System.IO.Hashing/10.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "System.Memory.Data/10.0.3": {
         "type": "package",
         "compile": {
@@ -1259,17 +1342,17 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.53.0": {
-      "sha512": "x9c/toFMOtRrlTdFuE7rlGCVAduQzWVfKmLz5juj41zJAXEhYD5hluiUyyAEzJ6OxpBnKtiaBztzwpZITAVjtg==",
+    "Azure.Core/1.55.0": {
+      "sha512": "c7femvYS/xEUrLP1sNZN+DoQZmx3X+G3ZXtOOz0RL/7cGMCM3JVqepVmRd3AwM4IK8AtTGS4GOigCO+d/zaSsQ==",
       "type": "package",
-      "path": "azure.core/1.53.0",
+      "path": "azure.core/1.55.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "ConfigurationSchema.json",
         "README.md",
-        "azure.core.1.53.0.nupkg.sha512",
+        "azure.core.1.55.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
         "buildTransitive/net10.0/Azure.Core.targets",
@@ -1287,6 +1370,24 @@
         "lib/net8.0/Azure.Core.xml",
         "lib/netstandard2.0/Azure.Core.dll",
         "lib/netstandard2.0/Azure.Core.xml"
+      ]
+    },
+    "Azure.Data.Tables/12.11.0": {
+      "sha512": "MabH2HegMvZA1ocaMhEfW/idyTa3CoH64s43/V9/KFRGdVqEj0EETvd3ItDe6Bbs2teiR40KE9Kz9NLDc5DJJw==",
+      "type": "package",
+      "path": "azure.data.tables/12.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.data.tables.12.11.0.nupkg.sha512",
+        "azure.data.tables.nuspec",
+        "azureicon.png",
+        "lib/net8.0/Azure.Data.Tables.dll",
+        "lib/net8.0/Azure.Data.Tables.xml",
+        "lib/netstandard2.0/Azure.Data.Tables.dll",
+        "lib/netstandard2.0/Azure.Data.Tables.xml"
       ]
     },
     "Azure.Identity/1.21.0": {
@@ -1327,6 +1428,70 @@
         "lib/net8.0/Azure.Monitor.OpenTelemetry.Exporter.xml",
         "lib/netstandard2.0/Azure.Monitor.OpenTelemetry.Exporter.dll",
         "lib/netstandard2.0/Azure.Monitor.OpenTelemetry.Exporter.xml"
+      ]
+    },
+    "Azure.Storage.Blobs/12.29.1": {
+      "sha512": "pWh7xZBto8YcwiO853AB3uijTfVqs9PDte0Bu9/Zd8O9nwKiitWm0Jej1vsNkmYUzeG1552f8vJPjmtW30pBUQ==",
+      "type": "package",
+      "path": "azure.storage.blobs/12.29.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.blobs.12.29.1.nupkg.sha512",
+        "azure.storage.blobs.nuspec",
+        "azureicon.png",
+        "lib/net10.0/Azure.Storage.Blobs.dll",
+        "lib/net10.0/Azure.Storage.Blobs.xml",
+        "lib/net8.0/Azure.Storage.Blobs.dll",
+        "lib/net8.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.0/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
+        "lib/netstandard2.1/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.1/Azure.Storage.Blobs.xml"
+      ]
+    },
+    "Azure.Storage.Common/12.28.0": {
+      "sha512": "5l8YhNrks38zKLGFW2BBFLwieyamH/xauABSASsdpZv79G0f+n2n22IjkRmUqCmALSupkwRHh2LOhbW3yj5Qgw==",
+      "type": "package",
+      "path": "azure.storage.common/12.28.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.common.12.28.0.nupkg.sha512",
+        "azure.storage.common.nuspec",
+        "azureicon.png",
+        "lib/net10.0/Azure.Storage.Common.dll",
+        "lib/net10.0/Azure.Storage.Common.xml",
+        "lib/net8.0/Azure.Storage.Common.dll",
+        "lib/net8.0/Azure.Storage.Common.xml",
+        "lib/netstandard2.0/Azure.Storage.Common.dll",
+        "lib/netstandard2.0/Azure.Storage.Common.xml"
+      ]
+    },
+    "Azure.Storage.Queues/12.27.1": {
+      "sha512": "uQgZ9bzwVJ8bqsWywzwkRt1lfusYPXJAPSb9yVlTsSmZtH+bnDb/RfQuHiuUmk3nlQbCOUGFdD0cRXn8uMiOHg==",
+      "type": "package",
+      "path": "azure.storage.queues/12.27.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.queues.12.27.1.nupkg.sha512",
+        "azure.storage.queues.nuspec",
+        "azureicon.png",
+        "lib/net10.0/Azure.Storage.Queues.dll",
+        "lib/net10.0/Azure.Storage.Queues.xml",
+        "lib/net8.0/Azure.Storage.Queues.dll",
+        "lib/net8.0/Azure.Storage.Queues.xml",
+        "lib/netstandard2.0/Azure.Storage.Queues.dll",
+        "lib/netstandard2.0/Azure.Storage.Queues.xml",
+        "lib/netstandard2.1/Azure.Storage.Queues.dll",
+        "lib/netstandard2.1/Azure.Storage.Queues.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3343,10 +3508,10 @@
         "opentelemetry.persistentstorage.filesystem.nuspec"
       ]
     },
-    "System.ClientModel/1.10.0": {
-      "sha512": "lBEWs54F5Y5pZ9hC+8z4S/X76957ex+DPk7WecRHlbIHtrPfbRMMlOgI3iDn4Jpb3bSxvBnKaaHoD59auFjlBA==",
+    "System.ClientModel/1.11.0": {
+      "sha512": "1Wl32zh7TbvN+HAO8NqDuaN0Ao2Qu/0j0NJSrXGDtpUQsTXQYJ3C6hd9/Ds2IrgP4agMQYFoXB35GZfC21ByHw==",
       "type": "package",
-      "path": "system.clientmodel/1.10.0",
+      "path": "system.clientmodel/1.11.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3367,7 +3532,7 @@
         "lib/net9.0/System.ClientModel.xml",
         "lib/netstandard2.0/System.ClientModel.dll",
         "lib/netstandard2.0/System.ClientModel.xml",
-        "system.clientmodel.1.10.0.nupkg.sha512",
+        "system.clientmodel.1.11.0.nupkg.sha512",
         "system.clientmodel.nuspec"
       ]
     },
@@ -3608,6 +3773,35 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "System.IO.Hashing/10.0.3": {
+      "sha512": "La6ICwsdTKhVX+LKN+pvFjQRR3LhLwq3uKdi2knjLzRyPYBSydF4cjXidYxIiTcDD6XVYdsBWQEI8ZxiZ/OdIg==",
+      "type": "package",
+      "path": "system.io.hashing/10.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Hashing.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Hashing.targets",
+        "lib/net10.0/System.IO.Hashing.dll",
+        "lib/net10.0/System.IO.Hashing.xml",
+        "lib/net462/System.IO.Hashing.dll",
+        "lib/net462/System.IO.Hashing.xml",
+        "lib/net8.0/System.IO.Hashing.dll",
+        "lib/net8.0/System.IO.Hashing.xml",
+        "lib/net9.0/System.IO.Hashing.dll",
+        "lib/net9.0/System.IO.Hashing.xml",
+        "lib/netstandard2.0/System.IO.Hashing.dll",
+        "lib/netstandard2.0/System.IO.Hashing.xml",
+        "system.io.hashing.10.0.3.nupkg.sha512",
+        "system.io.hashing.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Memory.Data/10.0.3": {
       "sha512": "MaGhRfGunmrj/nHjtsi9XkhlYJ/ERGWrbA+BiSKNtGnAjc9XlG5EhAvak6VRcX5LYzPF6pBO8nJ613dTgzabig==",
       "type": "package",
@@ -3707,7 +3901,10 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Azure.Data.Tables >= 12.11.0",
       "Azure.Identity >= 1.21.0",
+      "Azure.Storage.Blobs >= 12.29.1",
+      "Azure.Storage.Queues >= 12.27.1",
       "Microsoft.ApplicationInsights.AspNetCore >= 3.1.0",
       "Microsoft.AspNetCore.Mvc.TagHelpers >= 2.3.11",
       "Microsoft.EntityFrameworkCore >= 10.0.9",
@@ -3771,9 +3968,21 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
+          "Azure.Data.Tables": {
+            "target": "Package",
+            "version": "[12.11.0, )"
+          },
           "Azure.Identity": {
             "target": "Package",
             "version": "[1.21.0, )"
+          },
+          "Azure.Storage.Blobs": {
+            "target": "Package",
+            "version": "[12.29.1, )"
+          },
+          "Azure.Storage.Queues": {
+            "target": "Package",
+            "version": "[12.27.1, )"
           },
           "Microsoft.ApplicationInsights.AspNetCore": {
             "target": "Package",

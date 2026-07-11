@@ -52,9 +52,21 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "Azure.Data.Tables": {
+              "target": "Package",
+              "version": "[12.11.0, )"
+            },
             "Azure.Identity": {
               "target": "Package",
               "version": "[1.21.0, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.29.1, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.27.1, )"
             },
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
