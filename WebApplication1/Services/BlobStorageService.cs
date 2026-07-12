@@ -1,4 +1,6 @@
 ﻿using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
+using Azure.Storage.Sas;
 
 namespace WebApplication1.Services
 {
@@ -49,6 +51,33 @@ namespace WebApplication1.Services
                 Console.WriteLine(ex.Message);
                 throw new InvalidOperationException("Failed to upload blob");
             }
+        }
+
+        public async Task<string> GetBlobUrl(string profileImage)
+        {
+            var container = await GetBobContainerClient();
+            var blob = container.GetBlobClient(profileImage);
+
+            BlobSasBuilder sasBuilder = new BlobSasBuilder()
+            {
+                BlobContainerName = container.Name,
+                BlobName = blob.Name,
+                Resource = "b",
+                ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(3)
+            };
+
+            sasBuilder.SetPermissions(BlobSasPermissions.Read);
+
+            //get the blob url with the SAS token
+            string blobName = blob.GenerateSasUri(sasBuilder).ToString();
+            return blobName;
+        }
+
+        public async Task RemoveBlob(string profileImage)
+        {
+            var container = await GetBobContainerClient();
+            var blob = container.GetBlobClient(profileImage);
+            await blob.DeleteIfExistsAsync(DeleteSnapshotsOption.IncludeSnapshots);
         }
     }
 }

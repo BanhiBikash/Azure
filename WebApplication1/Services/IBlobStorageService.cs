@@ -7,5 +7,9 @@ namespace WebApplication1.Services
         Task<BlobContainerClient> GetBobContainerClient();
 
         Task<string> UploadBlob(IFormFile file, string imageName);
+
+        Task<string> GetBlobUrl(string profileImage);
+
+        Task RemoveBlob(string profileImage);
     }
 }
