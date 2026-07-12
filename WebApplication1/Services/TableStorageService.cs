@@ -39,7 +39,7 @@ namespace WebApplication1.Services
 
         private async Task<TableClient> GetTableClient()
         {
-            var serviceClient= new TableServiceClient(_configuration["AzureTableStorage"]);
+            var serviceClient= new TableServiceClient(_configuration["AzureStorageConnectionString"]);
 
             var tableClient = serviceClient.GetTableClient(TableName);
             await tableClient.CreateIfNotExistsAsync();

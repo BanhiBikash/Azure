@@ -8,6 +8,7 @@ namespace WebApplication1.Models
         public string FirstName { get ; set  ; }
         public string LastName { get ; set  ; }
         public string EmailAddress { get ; set  ; }
+        public string ProfileImage { get; set; }
         public string Industry { get; set; }
         public string PartitionKey { get ; set  ; }
         public string RowKey { get; set; }

@@ -1,0 +1,50 @@
+﻿@model List<AttendeeEntity>
+
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>This are the attendees</title>
+    </head>
+    <body>
+		<center>
+			<form asp-action="Create" asp-controller="Attendee" method="post">
+				<label>FirstName</label>
+			<input type="text" name="FirstName" />
+				<br />
+			<label>LastName</label>
+			<input type="text" name="LastName" />
+				<br/>
+			<label>Industry</label>
+			<input type="text" name="Industry" />
+				<br/>
+			<label>Email</label>
+			<input type="text" name="EmailAddress" />
+				<br/>
+			<button type="submit">Submit</button>
+			</form>
+    <table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Actions</th>
+			</tr>
+        </thead>
+			@foreach (var attendee in Model)
+			{
+				<tr>
+					<td>@attendee.FirstName @attendee.LastName</td>
+					<td>@attendee.EmailAddress</td>
+					<td>
+						<form asp-action="Delete" asp-controller="Attendee" method="post">
+							<input type="hidden" value="@attendee.RowKey" name="id" />
+							<input type="hidden" value="@attendee.Industry" name="industry" />
+							<button type="submit">Delete</button>
+						</form>
+					</td>
+				</tr>
+			}
+	</table>
+	</center>
+    </body>
+    </html>

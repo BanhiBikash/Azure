@@ -169,3 +169,8 @@ C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net1
 C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\Azure.Data.Tables.dll
+C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\Azure.Storage.Blobs.dll
+C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\Azure.Storage.Common.dll
+C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\Azure.Storage.Queues.dll
+C:\Users\Banhi\source\repos\Azure\WebApplication1\WebApplication1\bin\Debug\net10.0\System.IO.Hashing.dll
