@@ -117,7 +117,10 @@ namespace WebApplication1.Controllers
         {
             try
             {
+                //fetches the data for profile image
+                var attendeeData = await _iTableStorageService.GetAttendeee(industry, id);
                 await _iTableStorageService.DeleteAttendeee(industry,id);
+                await  _iBlobStorageService.RemoveBlob(attendeeData.ProfileImage);
                 return RedirectToAction(nameof(Index));
             }
             catch

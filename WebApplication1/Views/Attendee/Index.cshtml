@@ -7,7 +7,7 @@
     </head>
     <body>
 		<center>
-			<form asp-action="Create" asp-controller="Attendee" method="post" >
+			<form asp-action="Create" asp-controller="Attendee" method="post" enctype="multipart/form-data">
 				<label>FirstName</label>
 			<input type="text" name="FirstName" />
 				<br />
@@ -21,7 +21,7 @@
 			<input type="text" name="EmailAddress" />
 			<br />
 			<label>Image</label>
-			<input type="file" name="ProfileImage" />
+			<input type="file" name="formFile" />
 			<br />
 			<button type="submit">Submit</button>
 			</form>
@@ -37,7 +37,7 @@
 			@foreach (var attendee in Model)
 			{
 				<tr>
-					<td><img src="@attendee.ProfileImage" atl="This is user avatar" /></td>
+					<td><img style="width:30px;height:auto" src="@attendee.ProfileImage" atl="This is user avatar" /></td>
 					<td>@attendee.FirstName @attendee.LastName</td>
 					<td>@attendee.EmailAddress</td>
 					<td>
