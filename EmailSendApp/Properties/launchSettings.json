@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EmailSendApp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

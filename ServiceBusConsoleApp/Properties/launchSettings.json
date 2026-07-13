@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ServiceBusConsoleApp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

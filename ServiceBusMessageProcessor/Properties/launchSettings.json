@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ServiceBusMessageProcessor": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

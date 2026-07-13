@@ -19,6 +19,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<ITableStorageService, TableStorageService>();
 builder.Services.AddScoped<IBlobStorageService, BlobStorageService>();
+builder.Services.AddScoped<IQueueService, QueueService>();
 
 var app = builder.Build();
 app.MapControllers();   

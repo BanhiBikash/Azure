@@ -10,11 +10,13 @@ namespace WebApplication1.Controllers
     {
         private readonly ITableStorageService _iTableStorageService;
         private readonly IBlobStorageService _iBlobStorageService;
+        private readonly IQueueService _iQueueService;
 
-        public AttendeeController(ITableStorageService tableStorageService, IBlobStorageService iBlobStorageService)
+        public AttendeeController(ITableStorageService tableStorageService, IBlobStorageService iBlobStorageService, IQueueService iQueueService)
         {
             _iTableStorageService = tableStorageService;
             _iBlobStorageService = iBlobStorageService;
+            _iQueueService = iQueueService;
         }
 
         [Route("[action]")]
@@ -72,6 +74,8 @@ namespace WebApplication1.Controllers
                 }
 
                 await _iTableStorageService.UpsertAttendeee(attendeeEntity);
+                //send the email to the queue service
+                _iQueueService.SendMessage(new Email() { EmailAddress = attendeeEntity.EmailAddress, Subject = "Registration Successfull", TimeStamp = DateTime.UtcNow, Message = "This is body" });
                 return RedirectToAction(nameof(Index));
             }
             catch
