@@ -1,6 +1,7 @@
 <Solution>
-  <Project Path="SendEmailApp/SendEmailApp.csproj" Id="74b6aa03-0d89-49a1-82c4-f442e7772066" />
-  <Project Path="ServiceBusConsoleApp/ServiceBusConsoleApp.csproj" Id="3213fb19-e96c-48a7-a525-08b5e84cf296" />
-  <Project Path="ServiceBusMessageProcessor/ServiceBusMessageProcessor.csproj" Id="e9075cf6-c3c6-4f0e-9562-a251b153339d" />
+  <Project Path="SendEmailApp/SendEmailApp.csproj" />
+  <Project Path="ServiceBusConsoleApp/ServiceBusConsoleApp.csproj" />
+  <Project Path="ServiceBusMessageProcessor/ServiceBusMessageProcessor.csproj" />
+  <Project Path="ServiceBusMessagesProcessor/ServiceBusMessagesProcessor.csproj" />
   <Project Path="WebApplication1/WebApplication1.csproj" />
 </Solution>
